@@ -3,26 +3,26 @@
 #include <string.h>
 #include "Validation.h"
 
-int getInt(char message[])
+int getInt(char mensaje[])
 {
     int auxiliarInt;
-    printf("%s" , message);
+    printf("%s" , mensaje);
     scanf("%d" , &auxiliarInt);
     return auxiliarInt;
 }
 
 
-void getString(char message[], char input[])
+void getString(char mensaje[], char input[])
 {
-    printf(message);
+    printf(mensaje);
     scanf("%s", input);
 }
 
 
-float getFloat(char message[])
+float getFloat(char mensaje[])
 {
     float auxiliarFloat;
-    printf("%s" , message);
+    printf("%s" , mensaje);
     scanf("%f" , &auxiliarFloat);
     return auxiliarFloat;
 }
@@ -39,9 +39,9 @@ int isOnlyLetters(char str[])
     return 1;
 }
 
-int isPositive(float number)
+int isPositive(float numero)
 {
-    if(number > 0)
+    if(numero > 0)
     {
         return 1;
     }
